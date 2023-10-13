@@ -8,14 +8,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class Selinium extends baseclass{
+public class Selinium extends Baseclass{
 
 	public static void main(String[] args) {
 		//launch browser
-//		WebDriver driver =new ChromeDriver();
-//		driver.get("https://testautomationpractice.blogspot.com/");
-//		driver.manage().window().maximize();
-//		System.out.println(driver.getCurrentUrl());
+		WebDriver driver =new ChromeDriver();
+		driver.get("https://testautomationpractice.blogspot.com/");
+		driver.manage().window().maximize();
+		System.out.println(driver.getCurrentUrl());
 		//send keys 
 		driver.findElement(By.id("name")).sendKeys("Muthu");
 		//radio
